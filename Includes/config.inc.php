@@ -14,7 +14,11 @@ $footer = array(
 );
 
 $pages = array(
-	'/' => array('file' => 'home', 'texts' => 'Home')
+	'/' => array('file' => 'home', 'texts' => 'Home', 'menun' => array(1,1)),
+    'signIn' => array('file' => 'signIn', 'texts' => 'Sign in', 'menun' => array(1,1)),
+    'signUp' => array('file' => 'signUp', 'texts' => 'Sign up', 'menun' => array(1,1)),
+    'login' => array('file' => 'login', 'texts' => '', 'menun' => array(0,0)),
+    'registration' => array('file' => 'registration', 'texts' => '', 'menun' => array(0,0))
 );
 
 $errorPage = array ('file' => '404', 'texts' => 'A keresett oldal nem található!');

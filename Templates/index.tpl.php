@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php if(file_exists('./Logicals/'.$find['file'].'.php')) { include("./Logicals/{$find['file']}.php"); } ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +10,28 @@
 </head>
 <body>
 	<header>
-		<img src="./Images/<?=$header['imagePath']?>" alt="<?=$header['imageDef']?>">
+		<img id="headerImage" src="./Images/<?=$header['imagePath']?>" alt="<?=$header['imageDef']?>">
 		<h1><?= $header['title'] ?></h1>
 	</header>
+    <div id="wrapper">
+        <aside id="menu">
+            <nav>
+                <ul>
+					<?php foreach ($pages as $url => $page) { ?>
+						<?php if(! isset($_SESSION['login']) && $page['menun'][0] || isset($_SESSION['login']) && $page['menun'][1]) { ?>
+							<li<?= (($page == $find) ? ' class="active"' : '') ?>>
+							<a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
+							<?= $page['texts'] ?></a>
+							</li>
+						<?php } ?>
+					<?php } ?>
+                </ul>
+            </nav>
+        </aside>
+        <div id="content">
+            <?php include("./Templates/Pages/{$find['file']}.tpl.php"); ?>
+        </div>
+    </div>
     <footer>
         <?php if(isset($footer['Mi'])) { ?><?= $footer['Mi']; ?><?php } ?>
     </footer>

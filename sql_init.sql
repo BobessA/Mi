@@ -13,3 +13,5 @@ CREATE TABLE IF NOT EXISTS `users` (
 )
 ENGINE = MYISAM
 CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE UNIQUE INDEX uniqueUserName on users (UserName);

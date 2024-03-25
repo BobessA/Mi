@@ -1,6 +1,6 @@
 # Mi
 ## To do list
-1. <input type="checkbox" checked> Template kiválasztása  
+1. [ ] Template kiválasztása  
 
     1.1. <input type="checkbox" checked> Template feltöltés  
 

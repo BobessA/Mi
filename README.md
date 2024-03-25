@@ -1,26 +1,31 @@
 # Mi
 ## To do list
 1. [X] Template kiválasztása  
-   [X] Template feltöltés  
 
-2. [ ] Témához képek, szövegek, videók, téképek összeszedése, egyforma méretre a képeket - Andor  
+2. [X] Template feltöltés  
 
-3. [ ] Egy egységes tamplate az utazásokhoz, csak a html-t kelljen cserélni. - Viktor    
-   [ ] A PHP rész kell hozzá a dinamikus contenthez - Viktor  
+3. [ ] Témához képek, szövegek, videók, téképek összeszedése, egyforma méretre a képeket - Andor  
 
-4. [ ] Galéria  
+4. [ ] Egy egységes tamplate az utazásokhoz, csak a html-t kelljen cserélni. - Viktor    
 
-5. [ ] Bejelentkezés beállítása  
-   [ ] A bejelentkezett felhasználó adatait egy dedikált divben megjeleníteni, ha van tartalma  
-   [ ] Belépés kiléps gombok a bejelentkezett felhasználónak  
+5. [ ] A PHP rész kell hozzá a dinamikus contenthez - Viktor  
 
-6. [ ] Adatbázisba új tábla a mail küldéshez, Címzett, tárgy, szöveg, küldő Id, küldés dátum, 0-as ID a vendégnek - Adrián  
-   [ ] PHP rész a mentéshez  
+6. [ ] Galéria  
 
-7. [ ] Táblázatban megjeleníteni az emaileket  
+7. [ ] Bejelentkezés beállítása  
 
-8. [X] Bootstrap nézet    
+8. [ ] A bejelentkezett felhasználó adatait egy dedikált divben megjeleníteni, ha van tartalma  
 
-9. [X] GIT  
+9. [ ] Belépés kiléps gombok a bejelentkezett felhasználónak  
 
-10. [ ] Szerverre feltöltés 
+10. [ ] Adatbázisba új tábla a mail küldéshez, Címzett, tárgy, szöveg, küldő Id, küldés dátum, 0-as ID a vendégnek - Adrián  
+
+11. [ ] PHP rész a mentéshez  
+
+12. [ ] Táblázatban megjeleníteni az emaileket  
+
+13. [X] Bootstrap nézet    
+
+14. [X] GIT  
+
+15. [ ] Szerverre feltöltés 

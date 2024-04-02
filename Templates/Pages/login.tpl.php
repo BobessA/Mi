@@ -1,13 +1,28 @@
-<?php if(isset($row)) { ?>
-    <?php if($row) { ?>
-        <h1>Bejelentkezett:</h1>
-        Azonosító: <strong><?= $row['Id'] ?></strong><br><br>
-        Név: <strong><?= $row['LastName']." ".$row['FirstName'] ?></strong>
-    <?php } else { ?>
-        <h1>A bejelentkezés nem sikerült!</h1>
-        <a href="?page=login" >Próbálja újra!</a>
-    <?php } ?>
-<?php } ?>
-<?php if(isset($errormessage)) { ?>
-    <h2><?= $errormessage ?></h2>
-<?php } ?>
+<div class="wrapper style1">
+    <article id="main" class="container special">
+        <hr class="first" />
+            <section>
+            <?php if(isset($row)) { ?>
+            <?php if($row) { ?>
+                <?php header("Location: .") ?>
+                <?php } else { ?>
+                <header>
+                    <h3>A bejelentkezés sikertelen!</h3>
+                </header>
+                <p>
+                    <a href="?page=signIn" >Próbálja újra!</a>             
+                </p>
+                <?php } ?>
+            <?php } ?>
+            <?php if(isset($errormessage)) { ?>
+                <header>
+                    <h3><?= $errormessage ?></h3>
+                </header>
+                <p>
+                    <a href="?page=signIn" >Próbálja újra!</a>             
+                </p>
+            <?php } ?>
+            </section>
+        <hr />
+    </article>
+</div>

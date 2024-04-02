@@ -5,36 +5,137 @@
 <head>
 	<meta charset="utf-8">
 	<title><?= $title['title'] ?></title>
-	<link rel="stylesheet" href="./Styles/style.css" type="text/css">
-    <script type="text/javascript" src="Logicals/registration_check.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./Styles/css/main.css" />
+	<noscript><link rel="stylesheet" href="./Styles/css/noscript.css" /></noscript>
 	<?php if(file_exists('./Styles/'.$find['file'].'.css')) { ?><link rel="stylesheet" href="./Styles/<?= $find['file']?>.css" type="text/css"><?php } ?>
 </head>
-<body>
-	<header>
-		<img id="headerImage" src="./Images/<?=$header['imagePath']?>" alt="<?=$header['imageDef']?>">
-		<h1><?= $header['title'] ?></h1>
-	</header>
-    <div id="wrapper">
-        <aside id="menu">
-            <nav>
-                <ul>
-					<?php foreach ($pages as $url => $page) { ?>
-						<?php if(! isset($_SESSION['login']) && $page['menun'][0] || isset($_SESSION['login']) && $page['menun'][1]) { ?>
-							<li<?= (($page == $find) ? ' class="active"' : '') ?>>
-							<a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
-							<?= $page['texts'] ?></a>
-							</li>
-						<?php } ?>
-					<?php } ?>
-                </ul>
-            </nav>
-        </aside>
+<body class="right-sidebar is-preload">
+	<div id="page-wrapper">
+		<header>
+			<h1><?= $header['title'] ?></h1>
+			<?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong><?php } ?>
+		</header>
+		<div id="header">
+        	<aside id="menu">
+            		<nav id="nav">
+                		<ul>
+							<?php foreach ($pages as $url => $page) { ?>
+								<?php if(! isset($_SESSION['login']) && $page['menun'][0] || isset($_SESSION['login']) && $page['menun'][1]) { ?>
+									<li<?= (($page == $find) ? ' class="active"' : '') ?>>
+									<a href="<?= ($url == '/') ? '.' : ('?page=' . $url) ?>">
+									<?= $page['texts'] ?></a>
+									</li>
+								<?php } ?>
+							<?php } ?>
+                		</ul>
+            		</nav>
+        	</aside>				
+		</div>
+
         <div id="content">
             <?php include("./Templates/Pages/{$find['file']}.tpl.php"); ?>
         </div>
-    </div>
-    <footer>
-        <?php if(isset($footer['Mi'])) { ?><?= $footer['Mi']; ?><?php } ?>
-    </footer>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<section class="col-4 col-12-mobile">
+						<header>
+							<h2 class="icon solid fa-users circled"><span class="label">Posts</span></h2>
+						</header>
+						<ul class="divided">
+							<li>
+								<article class="post stub">
+									<header>
+										<h3>Sándor Adrián</a></h3>
+									</header>
+									<span>GMGCIY</span>
+								</article>
+							</li>
+							<li>
+								<article class="post stub">
+									<header>
+										<h3>Kaszás Viktor</a></h3>
+									</header>
+									<span>W8A1QH</span>
+								</article>
+							</li>
+							<li>
+								<article class="post stub">
+									<header>
+										<h3>Magyarosi Andor Máté</a></h3>
+									</header>
+									<span>ZYCMC6</span>
+								</article>
+							</li>
+						</ul>
+					</section>
+				<!-- Photos -->
+					<section class="col-4 col-12-mobile">
+						<header>
+							<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
+						</header>
+						<div class="row gtr-25">
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+							</div>
+							<div class="col-6">
+								<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+							</div>
+						</div>
+					</section>
+					<section class="col-4 col-12-mobile">
+						<header>
+							<h2 class="icon solid fa-comment circled"><span class="label">Tweets</span></h2>
+						</header>
+						<header>
+							<h3>Nisl turpis nascetur interdum?</h3>
+						</header>
+						<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/BobessA/Mi/tree/main" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						</ul>
+					</section>
+				</div>
+				<hr />
+				<div class="row">
+				<div class="col-12">
+					<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Mi projekt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Scripts -->
+		<script src="Logicals/js/jquery.min.js"></script>
+		<script src="Logicals/js/jquery.dropotron.min.js"></script>
+		<script src="Logicals/js/jquery.scrolly.min.js"></script>
+		<script src="Logicals/js/jquery.scrollex.min.js"></script>
+		<script src="Logicals/js/browser.min.js"></script>
+		<script src="Logicals/js/breakpoints.min.js"></script>
+		<script src="Logicals/js/util.js"></script>
+		<script src="Logicals/js/main.js"></script>
 </body>
 </html>

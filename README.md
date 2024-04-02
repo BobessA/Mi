@@ -12,11 +12,11 @@
 
 6. [ ] Galéria  
 
-7. [ ] Bejelentkezés beállítása  
+7. [X] Bejelentkezés beállítása  
 
 8. [ ] A bejelentkezett felhasználó adatait egy dedikált divben megjeleníteni, ha van tartalma  
 
-9. [ ] Belépés kiléps gombok a bejelentkezett felhasználónak  
+9. [X] Belépés kiléps gombok a bejelentkezett felhasználónak  
 
 10. [ ] Adatbázisba új tábla a mail küldéshez, Címzett, tárgy, szöveg, küldő Id, küldés dátum, 0-as ID a vendégnek - Adrián  
 

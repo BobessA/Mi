@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<title><?= $title['title'] ?></title>
 	<link rel="stylesheet" href="./Styles/style.css" type="text/css">
+    <script type="text/javascript" src="Logicals/registration_check.js"></script>
 	<?php if(file_exists('./Styles/'.$find['file'].'.css')) { ?><link rel="stylesheet" href="./Styles/<?= $find['file']?>.css" type="text/css"><?php } ?>
 </head>
 <body>

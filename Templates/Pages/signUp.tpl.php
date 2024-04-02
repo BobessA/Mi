@@ -5,9 +5,9 @@
         <br>
         <input type="text" name="lastName" placeholder="vezetéknév" required><br><br>
         <input type="text" name="firstName" placeholder="keresztnév" required><br><br>
-        <input type="text" name="user" placeholder="felhasználónév" required><br><br>
-        <input type="password" name="passw" placeholder="jelszó" required><br><br>
-        <input type="submit" name="registration" value="Regisztráció">
+        <input id="userInput" type="text" name="user" placeholder="felhasználónév" required><br><br>
+        <input id="passwInput" type="password" name="passw" placeholder="jelszó" required><br><br>
+        <input id="registrationButton" onclick="Valuescheck();" type="submit" name="registration" value="Regisztráció">
         <br>&nbsp;
     </fieldset>
 </form>

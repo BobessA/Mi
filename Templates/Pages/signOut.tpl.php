@@ -5,8 +5,8 @@
             unset($_SESSION["ln"]);
             unset($_SESSION["fn"]);
             unset($_SESSION["login"]);
+            unset($_SESSION["id"]);
         ?>
-        <hr class="first" />
             <section>
                 <header>
                     <h3>Sikeresen kijelentkezett</h3>
@@ -15,7 +15,6 @@
                     Az oldal hamarosan visszatér a kezdőlapra.             
                 </p>
             </section>
-        <hr />
     </article>
     <script>
         setTimeout(function() {

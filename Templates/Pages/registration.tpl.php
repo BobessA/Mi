@@ -11,7 +11,7 @@
                             <h3>Sikertelen regisztráció.</h3>
                         </header>
                         <p>
-                            <a href="?page=signUp">Próbálja újra!</a>            
+                            <a href="?page=signInUp">Próbálja újra!</a>            
                         </p>
                     <?php } ?>
                 <?php } ?>

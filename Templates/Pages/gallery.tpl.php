@@ -80,7 +80,7 @@
                         <h3><br>
 					</header>
                     <form action="?page=gallery" method="post" enctype="multipart/form-data">
-                        Kép:<br>
+                        <span id="selected-file">Kép:</span><br>
                         <label for="file-upload" class="custom-file-upload">
                             <i class="fas fa-cloud-upload-alt"></i> Fájl kiválasztása
                         </label>

@@ -17,7 +17,7 @@ if(isset($_POST['user']) && isset($_POST['passw']))
         {
             if(password_verify($_POST['passw'], $row['Passw'])) 
             {
-                $_SESSION['fn'] = $row['FirstName']; $_SESSION['ln'] = $row['LastName']; $_SESSION['login'] = $_POST['user'];
+                $_SESSION['fn'] = $row['FirstName']; $_SESSION['ln'] = $row['LastName']; $_SESSION['login'] = $_POST['user']; $_SESSION['id'] = $row['Id'];
             } else
                 $row = false;
         }

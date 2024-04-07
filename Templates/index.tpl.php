@@ -12,9 +12,14 @@
 </head>
 <body class="right-sidebar is-preload">
 	<div id="page-wrapper">
-		<header>
-			<h1><?= $header['title'] ?></h1>
-			<?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong><?php } ?>
+		<header id="main-header">
+			<div class="header-content">
+				<h1 class="header-title"><?= $header['title'] ?></h1>
+				<?php if(isset($_SESSION['login'])) { ?>
+					<div class="user-info">Bejlentkezve: <strong><?= $_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong>
+					</div>
+				<?php } ?>
+			</div>		
 		</header>
 		<div id="header">
         	<aside id="menu">
@@ -137,5 +142,6 @@
 		<script src="Logicals/js/breakpoints.min.js"></script>
 		<script src="Logicals/js/util.js"></script>
 		<script src="Logicals/js/main.js"></script>
+		<script src="Logicals/js/ownLogics.js" type="module" ></script>
 </body>
 </html>

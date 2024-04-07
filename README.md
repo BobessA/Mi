@@ -28,4 +28,4 @@
 
 14. [X] GIT  
 
-15. [ ] Szerverre feltöltés 
+15. [X] Szerverre feltöltés 

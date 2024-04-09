@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
     echo "
     </div>
     <div class=\"col-4 col-12-mobile\" id=\"content\">
-        <a href=\"#\" class=\"button animated-button\">Reverse Travel</a>
+        <a href=\"#\" class=\"button\"><i class=\"fas fa-plane-departure\"></i></i> Reverse Travel</a>
     </div>
 	</div>
     </div>

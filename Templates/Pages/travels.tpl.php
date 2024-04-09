@@ -21,6 +21,10 @@ $result = $conn->query($sql);
 // Ellenőrizzük, hogy vannak-e eredmények
 if ($result->num_rows > 0) {
     // Kiírjuk az adatokat
+    echo "<div class=\"wrapper style1\">
+	<div class=\"container\">
+		<div class=\"row gtr-200\">
+            <div class=\"col-8 col-12-mobile\" id=\"content\">";
     while($row = $result->fetch_assoc()) {
         echo "<article>";
         echo "<a href='#' class='image featured'><img src='images/{".$row['TripId']."}' alt='' /></a>";
@@ -30,6 +34,14 @@ if ($result->num_rows > 0) {
         echo "<p>{".$row['Content']."}</p>";
         echo "</article>";
     }
+    echo "
+    </div>
+    <div class=\"col-4 col-12-mobile\" id=\"content\">
+        <a href=\"#\" class=\"button animated-button\">Reverse Travel</a>
+    </div>
+	</div>
+    </div>
+    </div>";
 } else {
     echo "Nincs találat az adatbázisban.";
 }

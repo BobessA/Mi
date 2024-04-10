@@ -4,9 +4,21 @@ export const PageSelector = () => {
         SignInUpCheck();
     } else if (url.includes("gallery")) {
         DisplayFileName();
-    } else if (url.includes("gallery")) {
+    } else if (url.includes("contact")) {
         MailCheck()
     }
+}
+
+const hasInvalidBorderColor = (inputClass) => {
+    var inputFields = document.getElementsByClassName(inputClass);
+    //console.log(`mezokszama: ${inputFields.length == null ? 0 : inputFields.length}`);
+    for (var i = 0; i < inputFields.length; i++) {
+        console.log(`mezok: ${inputFields[i]}`);
+        if (inputFields[i].style.borderColor === 'lightcoral') {
+            return true;
+        }
+    }
+    return false;
 }
 
 const SignInUpCheck = () => {
@@ -19,18 +31,6 @@ const SignInUpCheck = () => {
     const signInUserInput = document.getElementById('signInUserInput');
     const signInPasswInput = document.getElementById('signInPasswInput');
     const loginButton = document.getElementById('loginButton');
-
-    const hasInvalidBorderColor = (inputClass) => {
-        var inputFields = document.getElementsByClassName(inputClass);
-        //console.log(`mezokszama: ${inputFields.length == null ? 0 : inputFields.length}`);
-        for (var i = 0; i < inputFields.length; i++) {
-            console.log(`mezok: ${inputFields[i]}`);
-            if (inputFields[i].style.borderColor === 'lightcoral') {
-                return true;
-            }
-        }
-        return false;
-    }
 
 //Regisztráció
     // Vezetéknév validációja
@@ -123,5 +123,63 @@ const DisplayFileName = () => {
 }
 
 const MailCheck = () => {
-    
+    const emailInput = document.querySelector('input[name="email"]');
+    const subjectInput = document.querySelector('input[name="subject"]');
+    const phoneInput = document.querySelector('input[name="phone"]');
+    const mailTextInput = document.querySelector('textarea.mail');
+    const sendMailButton = document.getElementById('sendMailButton');
+
+    // email validációja
+    const validateEmailInput = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailRegex.test(emailInput.value)) {
+            emailInput.style.borderColor = '';
+        } else {
+            emailInput.style.borderColor = 'lightcoral';
+        }
+    }
+
+    // tárgy validációja
+    const validateSubjectInput = () => {
+        if (subjectInput.value.trim().length < 3 || subjectInput.value.trim() === '') {
+            subjectInput.style.borderColor = 'lightcoral';
+        } else {
+            subjectInput.style.borderColor = '';
+        }
+    }
+
+    // telefonszám validációja
+    const validatePhoneInput = () => {
+        const phoneNumberRegex = /^[0-9+]+$/;
+        if (phoneInput.value.trim() == '') {
+            phoneInput.style.borderColor = '';
+        } else {
+            if (!phoneNumberRegex.test(phoneInput.value)) {
+                phoneInput.style.borderColor = '';
+            } else {
+                phoneInput.style.borderColor = 'lightcoral';
+            }
+        }
+    }
+
+    // email szöveg validációja
+    const validateMailTextInput = () => {
+        if (mailTextInput.value.length < 20) {
+            mailTextInput.style.borderColor = 'lightcoral';
+        } else {
+            mailTextInput.style.borderColor = '';
+        }
+    }
+
+    sendMailButton.addEventListener('click', function(event) {
+        if (hasInvalidBorderColor('mail')) {
+            event.preventDefault();
+            alert('Kérjük ellenőrizze a megjelölt mezők adatait.');
+        }
+    });
+
+    emailInput.addEventListener('blur', validateEmailInput);
+    subjectInput.addEventListener('blur', validateSubjectInput);
+    phoneInput.addEventListener('blur', validatePhoneInput);
+    mailTextInput.addEventListener('blur', validateMailTextInput);
 }

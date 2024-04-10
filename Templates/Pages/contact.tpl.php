@@ -30,14 +30,14 @@
 						<fieldset>
 							<br>
 							<label>E-mail cím*<label>
-							<input type="text" name="email" placeholder="E-mail cím" required><br>
+							<input class="mail" type="text" name="email" placeholder="E-mail cím" required><br>
 							<label>Telefonszám</label>
-							<input type="text" name="phone" placeholder="Telefonszám"><br>
+							<input class="mail" type="text" name="phone" placeholder="Telefonszám"><br>
                             <label>Tárgy*</label>
-							<input type="text" name="subject" placeholder="Tárgy" required><br>
+							<input class="mail" type="text" name="subject" placeholder="Tárgy" required><br>
                             <label>Üzenet*</label>
-							<textarea name="mailText" cols="40" rows="10" required></textarea><br>
-							<input type="submit" name="send" value="Küldés">
+							<textarea class="mail" name="mailText" cols="40" rows="10" required></textarea><br>
+							<input id="sendMailButton" type="submit" name="send" value="Küldés">
 							<br>&nbsp;
 						</fieldset>
 					</form>

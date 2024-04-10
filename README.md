@@ -6,9 +6,9 @@
 
 3. [ ] Témához képek, szövegek, videók, téképek összeszedése, egyforma méretre a képeket - Andor  
 
-4. [ ] Egy egységes tamplate az utazásokhoz, csak a html-t kelljen cserélni. - Viktor    
+4. [X] Egy egységes tamplate az utazásokhoz, csak a html-t kelljen cserélni. - Viktor    
 
-5. [ ] A PHP rész kell hozzá a dinamikus contenthez - Viktor  
+5. [X] A PHP rész kell hozzá a dinamikus contenthez - Viktor  
 
 6. [ ] Galéria  
 

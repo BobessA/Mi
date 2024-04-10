@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
     echo "
     </div>
     <div class=\"col-4 col-12-mobile\" id=\"content\">
-        <a href=\"#\" class=\"button\"><i class=\"fas fa-plane-departure\"></i></i> Reverse Travel</a>
+        <a href=\"/?page=contact\" class=\"button\"><i class=\"fas fa-plane-departure\"></i></i> Ajánlatkérés</a>
     </div>
 	</div>
     </div>

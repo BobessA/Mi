@@ -1,7 +1,7 @@
-CREATE DATABASE IF NOT EXISTS`mi`
+CREATE DATABASE IF NOT EXISTS `andor`
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-USE mi;
+USE andor;
 
 /*Felhasználók*/
 CREATE TABLE IF NOT EXISTS users (
@@ -65,3 +65,18 @@ select
     '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d578.3767773149482!2d33.63755956267434!3d34.91164062718759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1711486320709!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
 WHERE
 	not exists (select 1 from trips where Country='Ciprus' and Hotel='La C Mer');
+
+/*Üzenetek*/
+CREATE TABLE IF NOT EXISTS messages (
+  MessageId int(10) unsigned NOT NULL auto_increment,
+  UserId int(10) unsigned NOT NULL,
+  Subject varchar(127),
+  MessageText text NOT NULL,
+  Timestamp timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UserMail varchar(63),
+  UserPhone varchar(20), 
+  PRIMARY KEY (MessageId),
+  FOREIGN KEY (UserId) REFERENCES users(Id)
+)
+ENGINE = MYISAM
+CHARACTER SET utf8 COLLATE utf8_general_ci;

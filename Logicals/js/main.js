@@ -214,4 +214,33 @@
 
 		});
 
+		const modal = document.getElementById('messages_modal');
+
+        const rows = document.querySelectorAll('#messages_table tbody tr');
+
+        rows.forEach(row => {
+            row.addEventListener('click', () => {
+                const cells = row.getElementsByTagName('td');
+                const user = cells[0].textContent;
+                const subject = cells[1].textContent;
+                const message = cells[2].textContent;
+                const email = cells[3].textContent;
+                const date = cells[4].textContent;
+
+                document.querySelector('#messages_modal input[name="userName"]').value = user;
+                document.querySelector('#messages_modal input[name="sub"][readonly]').value = subject;
+                document.querySelector('#messages_modal textarea').value = message;
+                document.querySelector('#messages_modal input[name="email"]').value = email;
+                document.querySelector('#messages_modal input[name="date"][readonly]').value = date;
+
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close the modal when clicking the close button
+        const closeButton = document.querySelector('.close');
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
 })(jQuery);

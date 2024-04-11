@@ -4,17 +4,22 @@
 			<div class="col-4 col-12-mobile" id="sidebar">
 				<hr class="first" />
 				<section>
+						<video width="450" controls>
+  							<source src="../../Images/commerical.mp4" type="video/mp4">
+						</video>
 					<header>
-						<h3><a href="#">Accumsan sed penatibus</a></h3>
+						<h3><a href="#">További elérhetőségeink</a></h3>
 					</header>
 					<p>
-						Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-						porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-						magna tempus feugiat veroeros.
+						info@mi.hu
 					</p>
-					<footer>
-						<a href="#" class="button">Learn More</a>
-					</footer>
+					<p>
+						+3690/404-000
+					</p>
+					<p>
+						Városligeti-tó, Budapest, 1146
+					</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1309.0027099510164!2d19.080792446877204!3d47.514866990292056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1712783276534!5m2!1shu!2shu" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
 				</section>
 				<hr />
 			</div>

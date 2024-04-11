@@ -84,22 +84,22 @@
 						</header>
 						<div class="row gtr-25">
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/dubaj.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/japan.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/mallorca.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/malta.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/newyork.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/parizs.jpg" alt="" /></a>
 							</div>
 						</div>
 					</section>
@@ -108,13 +108,14 @@
 							<h2 class="icon solid fa-comment circled"><span class="label">Tweets</span></h2>
 						</header>
 						<header>
-							<h3>Nisl turpis nascetur interdum?</h3>
+							<h3>Közösségi felületeink</h3>
+							<p>Az alábbi oldalakon is megtalálhatnak.</p>
 						</header>
-						<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+						
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://hu.linkedin.com/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/BobessA/Mi/tree/main" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						</ul>
 					</section>

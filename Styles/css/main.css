@@ -3142,3 +3142,47 @@ input, select, textarea {
 		background-color: #f0f4f4;
 		cursor: pointer;
 	}
+	.modal {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: #898989 solid;
+		border-radius: 1em;
+    	width: 45em;
+		background-color: rgb(255, 255, 255);
+	    margin: 2em;
+    	z-index: 999;
+    	height: 25em;
+    	padding: 0.5em;
+		animation: fadeIn 0.5s ease-in-out;		
+	}
+	.close{
+    	font-size: 3em;
+    	cursor: pointer;
+    	animation: fadeOut 0.5s ease-in-out;
+    	margin: 0;
+	}
+	.messageTxt{
+		width: 100%;;
+	}
+	.row > .col-6 > input[type="text"]{
+		padding: 0;
+    	width: 100%;
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}

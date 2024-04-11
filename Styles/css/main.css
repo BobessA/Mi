@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
@@ -3150,14 +3151,15 @@ input, select, textarea {
 		transform: translate(-50%, -50%);
 		border: #898989 solid;
 		border-radius: 1em;
-    	width: 45em;
+    	width: 50em;
 		background-color: rgb(255, 255, 255);
 	    margin: 2em;
     	z-index: 999;
-    	height: 25em;
+    	height: 30em;
     	padding: 0.5em;
 		animation: fadeIn 0.5s ease-in-out;		
 	}
+		
 	.close{
     	font-size: 3em;
     	cursor: pointer;
@@ -3185,4 +3187,10 @@ input, select, textarea {
 		to {
 			opacity: 0;
 		}
+	}
+
+	.travel_form > button{
+		width: 14em;
+    	height: 5em;
+    	font-size: 15px;
 	}

@@ -34,4 +34,11 @@ $FileExtension = array('.jpg', '.png');
 $MediaTypes = array('image/jpeg', 'image/png');
 $Date = "Y.m.d. H:i";
 $MaxSize = 500 * 1024;
+
+// Kapcsolódás az adatbázishoz
+$dbConnection = array (
+    'host' => 'localhost',
+    'user' => 'andor',
+    'passw' => 'EUEOpRKLdKvy3YMU',
+    'dbName' => 'andor');
 ?>

@@ -1,14 +1,9 @@
 
 <div class="homepage is-preload">
 <?php
-// Kapcsolódás az adatbázishoz
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'Mi';
- 
-$conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
- 
+
+//$conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
+$conn = new mysqli($dbConnection['host'],$dbConnection['user'],$dbConnection['passw'],$dbConnection['dbName']); 
 // Ellenőrizzük a kapcsolatot
 if ($conn->connect_error) {
     die("Hiba az adatbázishoz való kapcsolódás során: " . $conn->connect_error);

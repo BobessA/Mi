@@ -4,7 +4,7 @@ if(isset($_POST['user']) && isset($_POST['passw']))
     //print ("<script>console.log('".$_POST['user']." ".$_POST['passw']."');</script>");
     try 
     {
-        $dbh = new PDO('mysql:host=localhost;dbname=Mi', 'root', '',
+        $dbh = new PDO('mysql:host='.$dbConnection['host'].';dbname='.$dbConnection['dbName'],$dbConnection['user'],$dbConnection['passw'],
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         

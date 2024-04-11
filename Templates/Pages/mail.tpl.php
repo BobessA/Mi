@@ -13,7 +13,7 @@
                 <?php if($sent = 1) { ?>
                     <?php echo "Üzenetének azonosítója: {$message}";?><br><br>
                     <?php
-                        $conn = new mysqli("localhost", "root", "", "Mi");
+                        $conn = new mysqli($dbConnection['host'],$dbConnection['user'],$dbConnection['passw'],$dbConnection['dbName']);
                         if ($conn->connect_error) {
                             die("Adatbázis kapcsolati hiba!" . $conn->connect_error);
                         }

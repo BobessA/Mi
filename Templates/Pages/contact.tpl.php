@@ -4,6 +4,9 @@
 			<div class="col-4 col-12-mobile" id="sidebar">
 				<hr class="first" />
 				<section>
+						<video width="450" controls>
+  							<source src="../../Images/commerical.mp4" type="video/mp4">
+						</video>
 					<header>
 						<h3><a href="#">További elérhetőségeink</a></h3>
 					</header>

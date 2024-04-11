@@ -84,22 +84,22 @@
 						</header>
 						<div class="row gtr-25">
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic10.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/dubaj.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic11.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/japan.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic12.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/mallorca.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic13.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/malta.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic14.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/newyork.jpg" alt="" /></a>
 							</div>
 							<div class="col-6">
-								<a href="#" class="image fit"><img src="../../Images/pic15.jpg" alt="" /></a>
+								<a href="/?page=gallery" class="image fit"><img src="../../Images/parizs.jpg" alt="" /></a>
 							</div>
 						</div>
 					</section>

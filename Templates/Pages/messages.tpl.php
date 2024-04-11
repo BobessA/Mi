@@ -1,3 +1,4 @@
+<div class="blur"></div>
 <div class="wrapper style1">
 	<article id="main" class="container special">
 		<a href="#" class="image featured"></a>
@@ -53,8 +54,8 @@
                     echo "</tbody>";
                     echo "</table>";
                     echo "
-                        <div id=\"messages_modal\" class=\"modal\">
-                            <div class=\"modal-content\">
+                        <div id=\"messages_modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">
+                            <div class=\"content\">
                                 <div class=row>
                                 <span class=\"close col-12\">&times;</span>
                                     <div class=\"col-6\">

@@ -39,7 +39,7 @@
 							<label>Telefonszám</label>
 							<input class="mail" type="text" name="phone" placeholder="Telefonszám"><br>
                             <label>Tárgy*</label>
-							<input class="mail" type="text" name="subject" placeholder="Tárgy" required><br>
+							<input class="mail" type="text" name="subject" placeholder="Tárgy" value="<?php echo isset($_GET['title']) ? $_GET['title'] : ''; ?>" required><br>
                             <label>Üzenet*</label>
 							<textarea class="mail" name="mailText" cols="40" rows="10" required></textarea><br>
 							<input id="sendMailButton" type="submit" name="send" value="Küldés">

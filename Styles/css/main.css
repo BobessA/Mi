@@ -1785,11 +1785,20 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 	}
-
+	@media screen {	
 		.image img {
 			display: block;
+			margin: 0 auto;
 			width: 100%;
 		}
+	}
+	@media mobile{
+		.image img {
+			display: block;
+			margin: 0 auto;
+			width: 50%;
+		}
+	}
 
 		.image.fit {
 			display: block;
@@ -3198,3 +3207,21 @@ input, select, textarea {
 		text-align: center;
     	font-size: 3em;
 	}
+
+	.iframe-resp{
+		position: relative;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		max-width: 100%;
+		max-height: 100%;
+		margin : 0 auto;
+		display: block;
+	  }
+	  .iframe-resp iframe, .iframe-resp video{
+		max-width: 100%;
+		max-height: 20em;
+		margin: 0 auto;
+		display: block;
+	  }

@@ -217,7 +217,7 @@
 		const modal = document.getElementById('messages_modal');
 
         const rows = document.querySelectorAll('#messages_table tbody tr');
-
+		const bodyTag = document.getElementsByTagName("body");
         rows.forEach(row => {
             row.addEventListener('click', () => {
                 const cells = row.getElementsByTagName('td');
@@ -228,19 +228,23 @@
                 const date = cells[4].textContent;
 
                 document.querySelector('#messages_modal input[name="userName"]').value = user;
-                document.querySelector('#messages_modal input[name="sub"][readonly]').value = subject;
+                document.querySelector('#messages_modal input[name="sub"]').value = subject;
                 document.querySelector('#messages_modal textarea').value = message;
-                document.querySelector('#messages_modal input[name="email"]').value = email;
+                document.querySelector('#messages_modal input[name="mail"][readonly]').value = email;
                 document.querySelector('#messages_modal input[name="date"][readonly]').value = date;
 
                 modal.style.display = 'block';
+				$("body").css("overflow","hidden");
             });
         });
 
         // Close the modal when clicking the close button
         const closeButton = document.querySelector('.close');
-        closeButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
+		if(closeButton != undefined){
+			closeButton.addEventListener('click', () => {
+					modal.style.display = 'none';
+					$("body").css("overflow","auto");
+			});
+		}
 
 })(jQuery);

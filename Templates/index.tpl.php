@@ -108,6 +108,12 @@
 							<h2 class="icon solid fa-comment circled"><span class="label">Tweets</span></h2>
 						</header>
 						<header>
+					<p>
+						info@mi.hu<br>
+						+3690/404-000<br>
+						Városligeti-tó, Budapest, 1146
+					</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1309.0027099510164!2d19.080792446877204!3d47.514866990292056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1712783276534!5m2!1shu!2shu" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							<h3>Közösségi felületeink</h3>
 							<p>Az alábbi oldalakon is megtalálhatnak.</p>
 						</header>

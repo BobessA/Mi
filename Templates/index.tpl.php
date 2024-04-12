@@ -16,7 +16,7 @@
 			<div class="header-content">
 				<h1 class="header-title"><?= $header['title'] ?></h1>
 				<?php if(isset($_SESSION['login'])) { ?>
-					<div class="user-info">Bejlentkezve: <strong><?= $_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong>
+					<div class="user-info">Bejelentkezve: <strong><?= $_SESSION['ln']." ".$_SESSION['fn']." (".$_SESSION['login'].")" ?></strong>
 					</div>
 				<?php } ?>
 			</div>		

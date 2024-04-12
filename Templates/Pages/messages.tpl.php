@@ -6,10 +6,8 @@
 			<h3>Üzenetek</h3>
 		</header>
 		<p>
-			Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
-			posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
-			sit arcu sociis.
 		</p>
+        
         <?php
                 $conn = new mysqli($dbConnection['host'],$dbConnection['user'],$dbConnection['passw'],$dbConnection['dbName']);
                 if ($conn->connect_error) {

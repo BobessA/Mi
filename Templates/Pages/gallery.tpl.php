@@ -22,9 +22,12 @@
                 if (file_exists($vegsohely))
                     $messages = " Már létezik: " . $_FILES["fileToUpload"]['name'];
                 else {
-                    move_uploaded_file($_FILES["fileToUpload"]['tmp_name'], $vegsohely);
-                    $messages = ' Ok: ' . $_FILES["fileToUpload"]['name'];
-                    $success = 1;
+                    if(move_uploaded_file($_FILES["fileToUpload"]['tmp_name'], $vegsohely)) {
+                        $messages = ' Ok: ' . $_FILES["fileToUpload"]['name'];
+                        $success = 1;
+                    } else {
+                        print ("<script>console.log('".$_FILES["fileToUpload"]["error"]."');</script>");
+                    }                    
                 }
             }
         }
@@ -32,16 +35,17 @@
             exit("A képfeltöltés sikertelen " . $messages);
         }
     } else {
-        print ("<script>console.log('else ágon vagyunk');</script>");
         print ("<script>console.log('".$messages."');</script>");    
     }
 
     $olvaso = opendir($Folder);
     while (($file = readdir($olvaso)) !== false)
         if (is_file($Folder . $file)) {
-            $vege = strtolower(substr($file, strlen($file) - 4));
-            if (in_array($vege, $FileExtension))
-                $images[$file] = filemtime($Folder . $file);
+            if ($file != "header.jpg") {
+                $vege = strtolower(substr($file, strlen($file) - 4));
+                if (in_array($vege, $FileExtension))
+                    $images[$file] = filemtime($Folder . $file);
+            }
         }
     closedir($olvaso);
 ?>

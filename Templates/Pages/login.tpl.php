@@ -10,7 +10,7 @@
                     <h3>A bejelentkezés sikertelen!</h3>
                 </header>
                 <p>
-                    <a href="?page=signIn" >Próbálja újra!</a>             
+                    <a href="?page=signInUp" >Próbálja újra!</a>             
                 </p>
                 <?php } ?>
             <?php } ?>
@@ -19,7 +19,7 @@
                     <h3><?= $errormessage ?></h3>
                 </header>
                 <p>
-                    <a href="?page=signIn" >Próbálja újra!</a>             
+                    <a href="?page=signInUp" >Próbálja újra!</a>             
                 </p>
             <?php } ?>
             </section>

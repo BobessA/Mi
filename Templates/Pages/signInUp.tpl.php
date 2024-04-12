@@ -26,17 +26,12 @@
 			<div class="col-4 col-12-mobile" id="sidebar">
 				<hr class="first" />	
 				<section>
-					<header>
-						<h3><a href="#">Accumsan sed penatibus</a></h3>
-					</header>
 					<p>
-						Dolor sed fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
-						porttitor phasellus tempus cubilia ultrices tempor sagittis  tellus ante diam nec penatibus dolor cras
-						magna tempus feugiat veroeros.
+						Regisztráció a weboldalunkra lehetővé teszi, hogy személyre szabott ajánlatokat kérhessen az utazásainkra, 
+						így könnyen megtalálhatja az ideális úti célt. Emellett lehetősége van feltölteni és megosztani képeit az utazásairól, 
+						így mások is inspirációt meríthetnek és tapasztalatokat cserélhetnek. 
+						A regisztráció segítségével gyorsabban és hatékonyabban tudjuk kiszolgálni az Ön igényeit, miközben kényelmesen kezelheti az utazási preferenciáit és élményeit egyetlen felületen.
 					</p>
-					<footer>
-						<a href="#" class="button">Learn More</a>
-					</footer>
 				</section>
 				<hr />
 			</div>
@@ -64,9 +59,6 @@
 							<br>&nbsp;
 						</fieldset>
 					</form>
-					<section>
-						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-					</section>
 				</article>
 			</div>
 		</div>

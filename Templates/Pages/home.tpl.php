@@ -13,10 +13,8 @@
 		</div>
 		<p>
 			Mi, mint az utazás szerelmesei és szakértői, elkötelezettek vagyunk abban, hogy minden utazónak lehetővé tegyük álmai helyszíneinek felfedezését. Bízunk abban, hogy mindenki számára elérhetővé tehetjük a világ lenyűgöző csodáit, ezért büszkén kínáljuk kedvező árú szállás- és repülőjegy-ajánlatainkat.
-
-Vállalkozásunk célja, hogy rugalmas és megfizethető lehetőségeket biztosítsunk, így mindenki számára elérhetővé válik a világ felfedezése. Legyen szó egy pihentető tengerparti vakációról, egy kalandos városnézésről, vagy akár egy kulturális utazásról, Mi Utazási Irodában megtalálja az ideális lehetőséget.
-
-Csapatunk elkötelezett az ügyfelek elégedettsége és kényelme iránt, és mindent megteszünk azért, hogy utazásuk felejthetetlen élménnyé váljon. Várjuk Önöket szeretettel, hogy együtt fedezzük fel a világ lenyűgöző tájait, és hogy minden út legyen egy új kaland!
+			Vállalkozásunk célja, hogy rugalmas és megfizethető lehetőségeket biztosítsunk, így mindenki számára elérhetővé válik a világ felfedezése. Legyen szó egy pihentető tengerparti vakációról, egy kalandos városnézésről, vagy akár egy kulturális utazásról, Mi Utazási Irodában megtalálja az ideális lehetőséget.
+			Csapatunk elkötelezett az ügyfelek elégedettsége és kényelme iránt, és mindent megteszünk azért, hogy utazásuk felejthetetlen élménnyé váljon. Várjuk Önöket szeretettel, hogy együtt fedezzük fel a világ lenyűgöző tájait, és hogy minden út legyen egy új kaland!
 		</p>
 		<div class="iframe-resp col-12">
 			<iframe width="840" height="472" src="https://www.youtube.com/embed/f0l7vmoI3KM?si=T-zxEP_zHZ1ETjh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

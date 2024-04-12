@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
         echo "<h3><a href='#'>".$row['Country']." ".$row['City']." ".$row['Address']."</a></h3>";
         echo "</header>";
         echo "<p>".$row['Content']."</p>";
-        echo "<p>".$row['Map']."</p>";
+        echo "<div class=\"iframe-resp\"><p>".$row['Map']."</p></div>";
         echo "<div class=\"row\">
         <div class=\"col-flex-4 col-12-mobile\"><h3><strong>".$row['Price']." Ft/Fő</strong></h3></div>
         <div class=\"col-4 col-12-mobile\" id=\"content\">

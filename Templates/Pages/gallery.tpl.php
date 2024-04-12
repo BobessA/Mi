@@ -5,7 +5,6 @@
         $messages = 'Nincs bejelentkezve';
         print ("<script>console.log('".$messages."');</script>");
     }  elseif (isset($_POST['kuld'])) {
-        print ("<script>console.log('jó helyen');</script>");
         if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
             if ($_FILES["fileToUpload"]['error'] == 4) {
                 $messages = " Nem választott ki feltöltendő fájlt: ";
@@ -100,7 +99,7 @@
 					<header>
 						<h2><a href="#">Galéria</a></h2>
 						<p>
-							Elégedett ügyfeleink nyaralásukról készített képei
+							A mi és velünk nyaraló elégedett utasaink képei
 						</p>
 					</header>
 					<div id="galeria">

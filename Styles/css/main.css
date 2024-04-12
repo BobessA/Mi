@@ -3194,3 +3194,7 @@ input, select, textarea {
     	height: 5em;
     	font-size: 15px;
 	}
+	.trip-title{
+		text-align: center;
+    	font-size: 3em;
+	}

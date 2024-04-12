@@ -10,33 +10,40 @@ if ($conn->connect_error) {
 }
  
 // Példa lekérdezés
-$sql = "SELECT * FROM trips";
+$sql = "SELECT * FROM `trips` LEFT JOIN images ON images.TripId=trips.TripId";
 $result = $conn->query($sql);
  
 // Ellenőrizzük, hogy vannak-e eredmények
 echo "<div class=\"wrapper style1\">
 	<div class=\"container\">";
+echo "<h1 class=\"trip-title\">Jelenleg elérhető all inclusive utazásaink.</h1>";
 if ($result->num_rows > 0) {
     // Kiírjuk az adatokat
     while($row = $result->fetch_assoc()) {
         echo "<div class=\"row gtr-200\">
-                <div class=\"col-8 col-12-mobile\" id=\"content\">";
+                <div class=\"col-12 col-12-mobile\" id=\"content\">";
         echo "<article>";
-        echo "<a href='#' class='image featured'><img src='images/".$row['TripId']."' alt='' /></a>";
+        if (!empty($row["Path"])) {
+            echo "<a href='#' class='image featured'><img src='".$row['Path']."' alt='.$row[Country].' /></a>";
+        }
         echo "<header>";
         echo "<h3><a href='#'>".$row['Country']." ".$row['City']." ".$row['Address']."</a></h3>";
         echo "</header>";
         echo "<p>".$row['Content']."</p>";
         echo "<p>".$row['Map']."</p>";
-        echo "</article>";
-        echo "
-            </div>
-            <div class=\"col-4 col-12-mobile\" id=\"content\">
+        echo "<div class=\"row\">
+        <div class=\"col-flex-4 col-12-mobile\"><h3><strong>".$row['Price']." Ft/Fő</strong></h3></div>
+        <div class=\"col-4 col-12-mobile\" id=\"content\">
                 <form class=\"travel_form\" action = \"/?page=contact&title=".$row['Country']." ".$row['City']."\" method = \"post\">
                     <button class=\"button\" type=\"submit\"><i class=\"fas fa-plane-departure\"></i></i> Ajánlatkérés</button>
                 </form>
             </div>
-	    </div><hr/>";
+	    </div>
+        </div>";
+        echo "</article>";
+        echo "
+            </div>
+            <hr/>";
     }
     echo "</div>
     </div>";

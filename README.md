@@ -14,7 +14,7 @@
 
 7. [X] Bejelentkezés beállítása  
 
-8. [ ] A bejelentkezett felhasználó adatait egy dedikált divben megjeleníteni, ha van tartalma  
+8. [X] A bejelentkezett felhasználó adatait egy dedikált divben megjeleníteni, ha van tartalma  
 
 9. [X] Belépés kiléps gombok a bejelentkezett felhasználónak  
 

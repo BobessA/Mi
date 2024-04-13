@@ -4,9 +4,11 @@
 			<div class="col-4 col-12-mobile" id="sidebar">
 				<hr class="first" />
 				<section>
+					<div class="iframe-resp col-12">
 						<video width="450" controls>
   							<source src="../../Images/commerical.mp4" type="video/mp4">
 						</video>
+					</div>
 					<header>
 						<h3><a href="#">További elérhetőségeink</a></h3>
 					</header>
@@ -19,7 +21,9 @@
 					<p>
 						Városligeti-tó, Budapest, 1146
 					</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1309.0027099510164!2d19.080792446877204!3d47.514866990292056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1712783276534!5m2!1shu!2shu" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+					<div class="iframe-resp">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1309.0027099510164!2d19.080792446877204!3d47.514866990292056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1712783276534!5m2!1shu!2shu" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
 				</section>
 				<hr />
 			</div>
